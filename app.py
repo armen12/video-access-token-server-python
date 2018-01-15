@@ -28,5 +28,5 @@ def token():
     # Return token
     return token.to_jwt()
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+
+app.run(host=os.environ['HOST'],port=os.environ['PORT'], debug=True)
