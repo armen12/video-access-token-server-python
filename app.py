@@ -29,4 +29,4 @@ def token():
     return token.to_jwt()
 
 
-app.run(host=os.environ['HOST'],port=os.environ['PORT'], debug=True)
+app.run(host=os.environ['HOST'], port=int(os.environ['PORT']), debug=True)
